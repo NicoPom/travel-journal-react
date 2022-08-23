@@ -1,0 +1,193 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --dark: #2b283a;
+  --orange: #f55a5a;
+  --grey: #918e9b;
+  --white: #ffffff;
+}
+
+/* typography */
+
+html {
+  font-family: "Inter", sans-serif;
+  color: var(--dark);
+}
+
+.page--title {
+  font-weight: 400;
+  font-size: 0.9rem;
+  letter-spacing: -0.075em;
+  color: var(--white);
+}
+
+.card--pin--logo {
+  width: 15px;
+  color: #f55a5a;
+}
+
+.card--location {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.64rem;
+  letter-spacing: 0.17em;
+}
+
+.card--googlemap--link {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.64rem;
+  text-underline-offset: 0.2em;
+  color: var(--grey);
+}
+
+.card--googlemap--link:hover,
+.card--googlemap--link:focus {
+  color: var(--orange);
+  font-weight: 600;
+}
+
+.card--title {
+  font-weight: 700;
+  font-size: 1.56rem;
+}
+
+.card--travel-dates {
+  font-weight: 700;
+  font-size: 0.64rem;
+}
+
+.card--description {
+  font-weight: 400;
+  font-size: 0.64rem;
+  line-height: 150%;
+}
+
+/* layout */
+
+html,
+body {
+  min-height: 100vh;
+}
+
+.container {
+  min-width: 350px;
+}
+
+header {
+  background-color: var(--orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 1.87em;
+}
+
+.globe--logo {
+  width: 27px;
+}
+
+.main {
+  margin: 2.5em auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.25em;
+}
+
+.card {
+  display: flex;
+  height: 170px;
+  gap: 20px;
+}
+
+.card--img--placeholder {
+  width: 25%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.card--info {
+  width: 70%;
+  align-self: center;
+}
+
+.card--pin--logo {
+  vertical-align: middle;
+  margin-right: 0.1em;
+}
+
+.card--location {
+  margin-right: 0.7em;
+}
+
+.card--title {
+  margin-top: 0.31em;
+  margin-bottom: 0.5em;
+}
+
+.card--travel-dates {
+  margin-bottom: 0.6em;
+}
+
+/*media queries*/
+
+@media (min-width: 600px) {
+  html {
+    font-size: 20px;
+  }
+
+  .card {
+    height: 200px;
+  }
+}
+
+@media (min-width: 1000px) {
+  html {
+    font-size: 24px;
+  }
+
+  .main {
+    margin: 40px auto;
+
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .card {
+    flex-direction: column;
+    height: auto;
+    width: 30%;
+  }
+
+  .card--info {
+    width: 100%;
+  }
+
+  .card--img--placeholder {
+    width: 100%;
+    min-height: 70%;
+  }
+
+  .card--googlemap--link {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1400px) {
+  html {
+    font-size: 28px;
+  }
+
+  .card--img--placeholder {
+    min-height: 400px;
+  }
+}
