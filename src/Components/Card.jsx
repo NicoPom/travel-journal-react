@@ -9,7 +9,7 @@ export default function Card(props) {
         alt={props.alt}
       />
       <div className="card--info">
-        <img className="card--pin--logo" src="../src/images/pin.svg" />
+        <img className="card--pin--logo" src="/img/pin.svg" />
         <span className="card--location">{props.location}</span>
         <a className="card--googlemap--link" href={props.googleMapsUrl}>
           View on Google Maps

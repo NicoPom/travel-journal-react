@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "./Components/header.jsx";
-import Card from "./Components/Card.jsx";
-import data from "./data.js";
+import Header from "./Components/Header";
+import Card from "./Components/Card";
+import data from "./data.json";
 
 export default function App() {
   const cards = data.map((item) => {
